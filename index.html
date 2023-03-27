@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function convert(n){
+        //     let str = n.toString();
+        //     let arr = str.split("")
+        //     // convert all elements to numbers
+        //     arr = arr.map(
+        //         // to return as a number
+        //         // (x) => parseInt(x)
+        //         // another trib
+        //         (x) => +x
+        //     )
+        //     // reverse the array
+        //     arr = arr.reverse()
+        //     return arr
+        // }
+
+        // another salution
+
+        // function convert(n){
+        //     return n
+        //     .toString()
+        //     .split("")
+        //     .map((x) => +x)
+        //     .reverse()
+        // }
+
+        // another salution
+
+        // function convert(n){
+        //     let str = n.toString();
+        //     // create empty array
+        //     let emptyArray = [];
+        //     //loop on string
+        //     for (let i = 0; i < str.length; i++){
+        //         emptyArray.push(+str[i])
+        //     }
+        //     //reverse array
+        //     let result = emptyArray.reverse()
+        //     return result;
+        // }
+
+        // another salution
+
+        function convert(n){
+            let str = n.toString();
+            // create empty array
+            let emptyArray = [];
+            //loop on string
+            for (let i = 0; i < str.length; i++){
+                emptyArray.unshift(+str[i])
+            }
+            return emptyArray;
+        }
+        console.log(convert(564987654));
+        console.log(convert(45698));
+    </script>
+</body>
+</html>
